@@ -53,7 +53,7 @@
                     <tr>
                         <td>2-4</td>
                         <td></td>
-                        <td><a href="PR-2-4"><image src="webroot/images/play.png" heigth="25%" width="25%"/></a></td>                        
+                        <td><a href="PR-2-4.html"><image src="webroot/images/play.png" heigth="25%" width="25%"/></a></td>                        
                     </tr>
                     <tr>
                         <td>2-4-2</td>
@@ -139,8 +139,6 @@
                         <td>2-9-3-b</td>
                         <td></td>
                         <td><a href="PR-2-9-3-b.html"><image src="webroot/images/play.png" heigth="25%" width="25%"/></a></td>
-                        
-                        
                     </tr>
                     <tr>
                         <td>PR-2-9-3-c</td>
