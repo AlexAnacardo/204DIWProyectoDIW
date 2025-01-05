@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        nav{
+            background-color: #5d5b87;
+            min-width: min-content;
+            height: 48px;
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+            a{
+                
+                width:128px;height: 100%;
+                color: white;
+                text-decoration: none;
+                font-family: sans-serif;
+                font-weight: 900;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            a:hover{
+                background: #98ceeb;
+            }
+        }
+        @media (max-width:576px){
+            nav{
+                flex-flow: column;
+                gap: 0px;
+                justify-content: flex-start;
+                height: 240px;
+                a{
+                    width: 100%;
+                    flex: 1 48px;
+                    border-bottom: 1px solid #aaa;
+                }
+                a:nth-child(1){
+                    order: 1;
+                }
+            }
+        }
+
+        @media (min-width:577px){
+            nav{
+                justify-content: space-around;
+                a:nth-child(1){display: none;}
+            }
+        }
+
+        @media (min-width:769px) {
+            nav a:first-child{
+                display: flex;
+                padding-left: 10px;
+                justify-content: flex-start;
+                margin-right: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="">&#9883;</a>
+            <a href="">Home</a>
+            <a href="">Products</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+        </nav>
+    </div>
+</body>
+</html>

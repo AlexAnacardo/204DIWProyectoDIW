@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            font-family: calibri, sans-serif;
+        }
+
+        main{
+            width: 600px;
+            position: relative;
+            padding-left: 10px;
+            h2{
+                height: 48px;
+                background: #dddddd;
+                
+                font-weight: bold;
+                line-height: 48px;
+                margin: 0;                
+                border-bottom: 1px solid #ccc;
+            }
+            p{
+                background: #eeeeee;
+                margin: 0;
+                display: none;
+            }
+            p:target{
+                display: block;
+            }
+        }
+        a{
+            text-decoration: none;
+            color: #468fc0;
+        }
+    </style>
+</head>
+<body>
+    <main>    
+        <h2><a href="#p1">Titulo 1</a></h2>
+        <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita excepturi aspernatur iste debitis error, veniam libero iure nesciunt quia modi fugit voluptas omnis aliquam repudiandae eligendi incidunt odit! Ipsa, eius?</p>
+        <h2><a href="#p2">Titulo 2</a></h2>
+        <p id="p2">Officia vel quae facilis quia veniam magnam ducimus est tenetur nobis maiores odit perspiciatis labore molestiae repellat modi eligendi quam corrupti, blanditiis nihil a quisquam! Asperiores illo iste necessitatibus! Maxime.</p>
+        <h2><a href="#p3">Titulo 3</a></h2>
+        <p id="p3">Tenetur explicabo quae quasi dignissimos a eos incidunt tempora nihil nesciunt nemo placeat perferendis, mollitia rerum et, accusantium veniam sunt. Nisi quo unde modi quasi maxime ipsam tempore architecto molestias?</p>
+        <h2><a href="#p4">Titulo 4</a></h2>
+        <p id="p4">Doloremque recusandae commodi alias enim error dicta quae eaque suscipit est accusantium, officiis, eius optio atque perferendis maiores rerum tempore tempora necessitatibus quam vero laudantium. Nemo doloribus impedit obcaecati blanditiis.</p>
+    </main>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 500px;
+            height: 400px;
+            display: flex;
+            flex-flow: wrap;
+            justify-content: space-evenly;
+            align-content: space-around;
+            background-color: greenyellow;
+        }
+
+        .dado{
+            width: 144px;
+            height: 144px;
+            border-radius: 3px;
+            background-color: red;            
+            display: flex;
+            flex-flow: wrap;
+            padding: 4px;
+            
+            .punto{
+                background-color: black;
+                height: 32px;
+                width: 32px;
+                border-radius: 50%;
+                
+            }            
+        }
+
+        .dado:nth-of-type(1){
+            justify-content: center;
+            align-items: center;
+        }
+
+        .dado:nth-of-type(2){
+            justify-content: space-between;
+
+            .punto:nth-of-type(2){
+                align-self: flex-end;
+            }
+        }
+
+        .dado:nth-of-type(3){
+            justify-content: space-between;
+
+            .punto:nth-of-type(3){
+                align-self: flex-end;
+            }
+
+            .punto:nth-of-type(2){
+                align-self: center;
+            }
+        }
+
+        .dado:nth-of-type(4){
+            justify-content: space-between;
+            align-content: space-between;
+
+            .punto:nth-of-type(2){
+                margin-left: 50px;                
+            }
+        }
+
+        .dado:nth-of-type(5){
+            justify-content: space-between;
+            align-content: space-between;
+
+            .punto:nth-of-type(3){
+                margin: 0px 30px 0px 55px;                
+            }
+            /*
+            .punto:nth-of-type(2){
+                margin-left: 50px;                
+            }
+            .punto:nth-of-type(4){
+                margin-bottom: 55px; 
+            }
+            .punto:nth-of-type(3){
+                margin-top: 55px; 
+            }
+            .punto:nth-of-type(5){
+                margin-top: 55px; 
+            }
+                */
+        }
+
+        .dado:nth-of-type(6){
+            flex-flow: column wrap;
+            justify-content: space-between;
+            align-content: space-between;
+            gap: 6px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="dado">
+            <article class="punto"></article>
+        </section>
+        <section class="dado">
+            <article class="punto"></article>
+            <article class="punto"></article>
+        </section>
+        <section class="dado">
+            <article class="punto"></article>
+            <article class="punto"></article>
+            <article class="punto"></article>
+        </section>
+        <section class="dado">
+            <article class="punto"></article>
+            <article class="punto"></article>
+            <article class="punto"></article>
+            <article class="punto"></article>
+        </section>
+        <section class="dado">
+            <article class="punto"></article>
+            <article class="punto"></article>
+            <article class="punto"></article>
+            <article class="punto"></article>
+            <article class="punto"></article>
+        </section>
+        <section class="dado">
+            <article class="punto"></article>
+            <article class="punto"></article>
+            <article class="punto"></article>
+            <article class="punto"></article>
+            <article class="punto"></article>
+            <article class="punto"></article>
+        </section>
+    </div>
+</body>
+</html>

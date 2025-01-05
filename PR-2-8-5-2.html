@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{box-sizing: border-box;}
+    .container{
+        position: relative;
+        z-index: -2;
+        width: 90vh;
+        height: 90vh;
+        background: #eee;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        .ball{
+            position: relative;
+            width: 200px;height: 200px;
+            border-radius: 50%;
+            background: radial-gradient(circle at 0% 0%, rgba(255,255,0,1) 20%, rgba(0, 0, 255, 1) 80%);            
+        }
+        .ball::after{
+            content: "";
+            display: block;
+            width: 190px;
+            height: 10px;
+            background: rgba(0, 0, 255);
+            opacity: 0.6;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            box-shadow: 0px -7px 7px 15px rgba(0, 0, 255);
+            border-radius: 50%;
+            z-index: -1;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ball">
+
+        </div>
+    </div>
+</body>
+</html>

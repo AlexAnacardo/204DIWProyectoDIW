@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box;}
+        nav{
+            width: 500px;
+            height: 100px;
+            background: rgb(223, 223, 254);
+            display: flex;   
+            a:nth-child(1){background: #266400;}
+            a:nth-child(2){background: #f1a500;}
+            a:nth-child(3){background: #5882b5;}
+            a:nth-child(4){background: #770282;}
+            a{
+                flex: 1;
+                text-decoration: none;
+                color: white;
+                font-weight: bold;
+                font-family:  'Segoe UI', sans-serif;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                span{
+                    transform: rotate(-90deg);
+                    transition: all .5s ease-in-out;
+                }
+            }
+            a:hover span{
+                transform: rotate(0deg);
+                transition: all .5s ease-in-out;
+            }
+
+            a:hover{
+                flex: 5;
+                transition: all .5s ease-in-out;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href=""><span>Centro</span></a>
+            <a href=""><span>Profesores</span></a>
+            <a href=""><span>Asignaturas</span></a>
+            <a href=""><span>Cursos</span></a>
+        </nav>
+    </div>
+</body>
+</html>

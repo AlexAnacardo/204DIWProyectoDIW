@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PR-2-8-5-3</title>
+    <style>
+        *{box-sizing: border-box;}        
+        .container{
+            display: flex;
+            padding-top: 0.1px;
+            margin-top: 50px;
+            width: 95vw; height: 95vh;
+            background: #ccc;
+            .box1{
+                position: relative;
+                margin: 60px;
+                width: 500px; height: 200px;
+                background: #d89a43;
+                display: flex;
+                padding: 15px;
+                justify-content: space-around;
+                border-radius: 15px;
+                border: 1px solid #d89a43;
+                img{
+                    align-self: center;
+                    max-width: 100%;
+                    display: block;
+                }
+                .triangle1{
+                    position: absolute;
+                    border: 50px solid transparent;
+                    border-bottom: 50px solid #d89a43;
+                    top:-100px;
+                }
+                .triangle2{
+                    position: absolute;
+                    border: 25px solid transparent;
+                    border-top: 25px solid #d843cc;
+                    bottom: -50px;
+                    left: 25px;
+                }                
+            }
+            .box2{
+                
+                color: white;
+                position: relative;
+                margin: 60px;
+                width: 500px;height: 100px;
+                border-width: 10px;                
+                background: #333;                
+                .triangle21{
+                    position: absolute;
+                    border: 25px solid transparent;
+                    border-bottom: 25px solid blue;
+                    top:-50px;
+                    right: 50px;
+                }
+                .triangle22{
+                    position: absolute;
+                    border: 25px solid transparent;
+                    border-left: 25px solid blue;
+                    right: -50px;
+                    
+                } 
+            }        
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+            <span>Caja</span>
+            <img src="http://picsum.photos/100/100">
+            <span>Parrafo1</span>
+            <div class="triangle1"></div>
+            <div class="triangle2"></div>
+        </div>
+        <div class="box2">
+            A
+            <div class="triangle21"></div>
+            <div class="triangle22"></div>
+        </div>
+    </div>
+</body>
+</html>

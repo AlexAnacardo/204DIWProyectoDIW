@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        .container{
+            position: relative;
+            width: 100%;
+            height: 100vh;
+        }
+        header{
+            position: relative;
+            width: 100%;
+            height: 10vh;
+            background: bisque;
+            border-bottom: 2px solid #e9967a;
+            section{
+                position: absolute;
+                width: 33%;
+                height: 100%;
+                text-align: center;
+                font-size: 24px;
+                font-weight: bold;
+                line-height: 10vh;
+            }
+            section:nth-of-type(1){
+                background: #336655;                                
+            }
+            section:nth-of-type(2){
+                left: 33%;
+                background: #5f9ea0;
+            }
+            section:nth-of-type(3){
+                left: 66%;
+                background: #663355;
+            }
+        }
+        main{
+            position: relative;
+            width: 100%;
+            height: 84%;
+            background: rgb(250, 237, 213);
+            border-bottom: 2px solid #e9967a;
+            nav, section, aside{
+                position: absolute;
+                height: 100%;
+            }
+
+            nav{
+                background: #228899;
+                width: 20%;
+                height: 100%;
+            }
+
+            nav a{
+                display: block;
+                text-decoration: none;
+                color: white;
+                font-weight: 900;
+                width: 100%;
+                height: 24px;
+                line-height: 24px;
+                padding-left: 10px;
+                border-bottom: 1px solid brown;
+            }
+            section{
+                width: 60%;
+                background: #87ceeb;
+                left: 20%;
+                article{
+                    width: 100%;
+                    position: absolute;
+                    height: 30%;  
+                    border-left: 2px solid #e9967a;
+                    border-right: 2px solid #e9967a;
+                    h2{
+                        position: relative;
+                        padding-left: 5px;
+                    }                  
+                    p{
+                        position: absolute;
+                        left: 10px;
+                        top: 45%;
+                    }
+                    img{
+                        position: absolute;
+                        right: 15px;
+                        bottom: 30%;
+                    }
+                }
+                article:nth-of-type(1){
+                    background: #87ceeb;                       
+                    height: 40%;
+                    top: 0;
+                }
+                article:nth-of-type(2){
+                    background: #7fffd4;                    
+                    height: 40%;
+                    top: 30%;
+                }
+
+                article:nth-of-type(3){
+                    background: #87ceeb;                 
+                    height: 40%;
+                    bottom: 0;
+                }
+            }
+            aside{
+                width: 20%;
+                right: 0;
+                background: #ff4500;
+            }
+        }
+
+        footer{
+            height: 6vh;
+            background: #cae91e;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <section>&#127981;Logo empresa &#128509;</section>
+            <section>Buscar</section>
+            <section>Cuenta, cesta</section>
+        </header>
+        <main>
+            <nav>
+                <a href="">Option 1</a>
+                <a href="">Option 2</a>
+                <a href="">Option 3</a>
+                <a href="">Option 4</a>
+            </nav>
+            <section>
+                <article>
+                    <h2>Mi articulo 1</h2>
+                    <p>Lorem ipsum sit amet consectetur</p>
+                    <img src="http://picsum.photos/id/140/100/100" alt="">
+                </article>
+                <article>
+                    <h2>Mi articulo 2</h2>
+                    <h3>Subtitulo 2 article</h3>
+                    <p>Contenido articulo 2</p>
+                    <img src="http://picsum.photos/id/151/100/100" alt="">
+                </article>
+                <article>
+                    <h2>Mi articulo 3</h2>
+                    <p>Lorem ipsum sit amet consectetur</p>
+                    <img src="http://picsum.photos/id/130/100/100" alt="">
+                </article>
+            </section>
+            <aside>
+                <p>Aqui tenemos...</p>
+            </aside>
+        </main>
+        <footer>Diseño de interfaces web</footer>
+    </div>
+</body>
+</html>

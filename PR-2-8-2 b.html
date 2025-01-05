@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            --cbg: #f0f;
+        }
+        main{
+            position: absolute;
+            width: 580px;
+            height: 600px;
+            top: 0;
+            
+            background: calc(--cbg);
+            input{display:none;}
+            border: 1px solid black;
+            padding-left:  20px;
+
+            label:nth-of-type(1){
+                display: block;
+                width: 128px;
+                height: 48px;
+                line-height: 48px;
+                text-align: center;
+                background: #008080;
+                border-radius: 3px;
+                color: white;                
+                text-transform: uppercase;
+            }
+
+            article{
+                
+                position: absolute;
+                width: 600px;
+                height: 600px;
+                background: #226546;
+                top: 0;
+                left: -200%;
+                transition: all 1s ease-in-out;
+
+                label:nth-of-type(1){
+                    background: #ff6347;
+                    position: absolute;
+                    display: block;
+                    width: 48px;
+                    height: 48px;
+                    right: 10px;
+                    top: 10px;
+                    border-radius: 50%;
+                    font-weight: bold;
+                }
+                p{
+                    position: absolute;
+                    width: 70%;
+                    background: #666666;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+            #open:checked ~ article{
+                left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h2>Ventana modal con :checked y radioButtons</h2>
+        <input type="radio" id="open" name="btn">
+        <label for="open">Mostrar modal</label>
+        <input type="radio" id="close" name="btn">
+        
+
+        <article>
+            <label for="close">X</label>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae sapiente a, non nisi nobis quo, nihil nesciunt commodi ea molestias maxime eum saepe, esse libero inventore ullam harum hic ut?
+            </p>
+        </article>
+    </main>
+    
+</body>
+</html>

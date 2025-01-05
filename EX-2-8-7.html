@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX-2-8-5</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        html{
+            height: 100%;
+        }
+
+        header{
+            background: black;
+            height: 80px;
+            
+        }
+        body{
+            height: 100%;
+            background: #ccc;
+
+            nav{
+                background: #262f3e;
+                height: 6%;
+                display: flex;
+            }
+
+            #container{
+                display: flex;
+                flex-direction: row;
+                height: 86.3%;
+            }
+
+            ul{
+                list-style: none;
+                width: 350px;
+                background: white;
+                height: 100%;
+                p, li{
+                    padding: 10px;
+                }
+                li:hover{
+                    background: #eee;
+                }
+                p:nth-of-type(1){
+                    background: #262f3e;
+                    color: white;
+                } 
+                p:nth-of-type(2){
+                    font-weight: bold;
+                }              
+            }
+
+            #fondoTransparente{
+                background-color: black;
+                opacity: 0.5;
+                height: 100%;
+                width: 84%;
+
+                a{
+                    color: black;
+                    text-decoration: none;
+                }
+
+                p{                    
+                    background-color: yellow;
+                    border-radius: 50%;
+                    width: 70px;
+                    height: 70px;
+                    padding: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+
+        #container{
+            position: relative;
+            left: -100%;
+        }
+
+        #desplegarMenu{            
+            display: flex;
+            align-items: center;
+            height: 100%;
+            img{
+                max-width: 100%;
+                max-height: 100%;                
+            }
+        }        
+        #desplegarMenu:hover{   
+            border: 1px solid white;
+        }
+
+        #container:target{
+            transition: all 0.5s ease-in-out;
+            left: 0%;
+        }
+
+        #menu{
+            a{
+                text-decoration: none;
+                color: black;
+            }
+        }
+
+        #menuVideo{
+            position: absolute;
+            left: -100%;
+            p{                
+                font-weight: bold;
+            }
+        }
+
+        #menuVideo:target{
+            transition: all 0.5s ease-in-out;
+            left: 0%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+
+    </header>
+    <body>
+        <nav>
+            <a href="#container" id="desplegarMenu"><img src="images/amazon.png" alt=""></a>   
+        </nav>        
+        
+        <div id="container">
+            <ul id="menu">
+                <p>&#9937; Hola, Antonio</p>
+                <li>Tendencias</li>
+                <li>Los mas vendidos</li>
+                <li>Productos del momento</li>
+                <p>Contenido y Dispositivos Digitales</p>
+                <a href="#menuVideo"><li>Amazon prime video &#129146</li></a>
+                <li>Amazon music</li>
+                <li>Amazon Photos</li>
+            </ul>
+            <ul id="menuVideo">
+                <p>&#9937; Hola, Antonio</p>
+                <li>&#129144 MENU PRINCIPAL</li>
+                <p>Amazon prime video</p>
+                <li>Todos los videos</li>
+                <li>Categorias</li>
+                <li>Mi espacio</li>
+            </ul>
+            <div id="fondoTransparente">
+                <a href="#salir"><p>X</p></a>
+            </div>
+        </div> 
+    </body>
+</body>
+</html>

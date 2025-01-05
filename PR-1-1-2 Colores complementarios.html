@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width: 98%;
+            table-layout: fixed;
+            text-align: center;
+            font-weight: bold;
+        }
+        tr{
+            height: 32px;
+            td:first-child{
+                background: red;
+            }
+            td:nth-child(2){
+                background: #00FF00;
+            }
+            td:last-child{
+                background: blue;
+            }
+            td p.hide{
+                display: none;
+            }
+
+            td:first-child:hover{
+                background: #00FFFF;
+                p.hide{
+                    display: block;
+                }
+                p.visible{
+                    display: none;
+                }
+            }
+
+            td:nth-child(2):hover{
+                background: #FF00FF;
+                p.hide{
+                    display: block;
+                }
+                p.visible{
+                    display: none;
+                }
+            }
+
+            td:last-child:hover{
+                background: #FFFF00;
+                p.hide{
+                    display: block;
+                }
+                p.visible{
+                    display: none;
+                }
+            }
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <p class="visible">Color rojo #FF0000</p>
+                <p class="hide">Color cyan #00FFFF</p>
+            </td>
+            <td>
+                <p class="visible">Color verde #00FF00</p>
+                <p class="hide">Color morado #FF00FF</p>
+            </td>
+            <td>
+                <p class="visible">Color azul #0000FF</p>
+                <p class="hide">Color amarillo #FFFF00</p>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

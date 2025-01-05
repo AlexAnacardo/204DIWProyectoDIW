@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PR-2-4</title>
+    <style>
+        p{width: 250px; background-color: grey; padding: 10px 0px;}
+        div{width: 250px; padding: 10px 0px;}
+        li{width: 128px; height: 34px;}
+        section:nth-of-type(1){
+            p:first-child{background: #115599;}
+            p:last-child{background: #995511;}
+        }
+        section:nth-of-type(2){
+            ul li:nth-child(2), li:nth-child(5){
+                background: red;
+            }
+            ul li:nth-child(4){
+                background: rgb(94, 35, 35);
+            }
+            
+        }
+        section:nth-of-type(3) p:only-child{
+            background: greenyellow;
+        }
+        section:nth-of-type(4){
+            p{background: grey;}
+            p:first-of-type{
+                background: #87ceeb;
+            }
+            div:first-of-type{background: yellow;}
+            p:last-of-type{
+                background-color: grey;
+            }
+        }
+
+        section:nth-of-type(5){
+            p:nth-of-type(2){
+                background: #115599;
+                color: white;
+            }
+            strong:nth-last-child(3){
+                background: orange;
+            }
+        }
+
+        section:nth-of-type(6){            
+            span{
+                background: rgb(232, 69, 69);
+            }
+        }
+    </style>
+</head>
+<body>    
+    <section>
+        <!-- :first-child y :last-child -->
+        <p>Parragraph 1</p>
+        <p>Parragraph 2</p>
+        <p>Parragraph 3</p>
+        <p>Parragraph 4</p>
+    </section>
+    <section>
+        <!-- :nth-child y :nth-last-child -->
+        <ul>
+            <li>Option 1</li>
+            <li>Option 2</li>
+            <li>Option 3</li>
+            <li>Option 4</li>
+            <li>Option 5</li>
+            <li>Option 6</li>
+        </ul>        
+    </section>
+    <section>
+        <p class="single">Single parragraph</p>
+    </section>
+    <section>        
+        <p>Parragraph 1</p>
+        <span>Text in span</span>
+        <p>Parragraph 2</p>
+        <strong>Text in strong</strong>
+        <div>Text in a div</div>
+        <p>Parragraph 3</p>        
+    </section>
+
+    <section>        
+        <p>Parragraph 1</p>
+        <span>Text in span</span>
+        <p>Parragraph 2</p>
+        <strong>Text in strong</strong>
+        <div>Text in a div</div>
+        <p>Parragraph 3</p>        
+    </section>
+
+    <section>
+        <span>Text in span</span>
+        <p>Parragraph two2</p>
+        <p>Parragraph three</p>
+    </section>
+</body>
+</html>

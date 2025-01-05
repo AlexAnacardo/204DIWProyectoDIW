@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PR-2-8-6</title>
+    <style>
+        *{box-sizing: border-box; margin: 0; padding: 0;}
+        body{
+            background-color: rgb(130, 240, 229);
+        }
+        #contenedor{  
+            margin: 0 auto;
+            height: 90vh;
+            width: 90vw; 
+            position: relative;
+        }
+
+        header{
+            position: absolute;
+            left: 40%;
+            top: 20px;
+            h1{
+                font-family: sans-serif;                
+            }
+        }
+
+        .articulo{
+            width: 180px;
+            height: 300px; 
+            position: absolute;
+            top: 60px;
+            overflow: auto;
+        }
+
+        .articulo:nth-of-type(1){
+            left: 15%;
+        }
+
+        .articulo:nth-of-type(2){            
+            left: 45%;
+            
+        }
+
+        .articulo:nth-of-type(3){
+            left: 75%;
+            
+        }
+
+        .articulo > img{
+            display: block;
+            height: 60%;
+            width: 100%;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .content{            
+            height: 40%;
+            width: 100%;
+            color: green;
+            background-color: rgb(201, 196, 196);
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px; 
+            margin-top: -3.5px;                     
+        }
+        
+        p{
+            padding-top: 10px;  
+        }
+
+        .iconosBottom{
+            position: absolute;
+            bottom: 0;
+        }
+
+        img:nth-of-type(n+3){
+            position: absolute;
+            right: -80px;
+            bottom: 5px;            
+        }
+
+        #precio{
+            top: 160px;
+            position: absolute;
+            text-align: center;
+            width: 65%;
+            height: 30%;
+            background-image: url(images/boton_amarillo.png);
+            
+            background-size: 170%;
+            background-repeat: no-repeat;
+            color: black;
+            font-weight: bolder;
+
+            span{
+                position: absolute;
+                top: 10px;
+                left: 40px;
+            }
+        }
+
+        .menuHover{
+            opacity: 0%;
+            position: absolute;            
+            width: 100%;
+            height: 60%;
+            top: 0px;
+            img{
+                position: absolute;
+                top: 40%;
+            }
+
+            img:nth-of-type(1){
+                left: 7%;
+            }
+
+            img:nth-of-type(2){
+                left: 24%;
+            }
+
+            img:nth-of-type(3){
+                left: 41%;
+            }
+            
+            img:nth-of-type(4){
+                left: 58%;
+            }
+
+            img:nth-of-type(5){
+                left: 75%;
+            }
+        }
+        .menuHover:hover{
+            opacity: 100%;
+        }                
+    </style>
+</head>
+<body>
+    <div id="contenedor">
+        <header>
+            <h1>LISTADO DE ARTICULOS</h1>
+        </header>
+        <div id="articulo1" class="articulo">
+            <img src="images/apple-watch-6.jfif" id="imagen1">
+            <div class="menuHover">
+                <img src="images/vista-previa.png" height="30px" width="30px">
+                <img src="images/listadeseo.png" height="30px" width="30px">
+                <img src="images/comparador.png" height="30px" width="30px">
+                <img src="images/configurador.png" height="30px" width="30px">
+                <img src="images/carro.png" height="30px" width="30px">
+            </div>
+            <div class="content">
+                <div id="precio"><span>229.99</span></div>                
+                <p>Apple watch series 6 (GPS, 44MM) Caja de Aluminio Plata con Correa Deportiva</p>
+                <div class="iconosBottom">
+                    <img src="images/novedad.png" height="40px" width="40px">
+                    <img src="images/topventas.png" height="40px" width="40px">
+                    <img src="images/stock-3.png" height="30px" width="30px">
+                </div>
+            </div>
+        </div>
+        <div id="articulo2" class="articulo">
+            <img src="images/samsungGalaxyWatchActive2.png" id="imagen2">
+            <div class="menuHover">
+                <img src="images/vista-previa.png" height="30px" width="30px">
+                <img src="images/listadeseo.png" height="30px" width="30px">
+                <img src="images/comparador.png" height="30px" width="30px">
+                <img src="images/configurador.png" height="30px" width="30px">
+                <img src="images/carro.png" height="30px" width="30px">
+            </div>
+            <div class="content">
+                <div id="precio"><span>113.99</span></div>                
+                <p>Samsung galaxy Watch Active2 SM-R830 - Smartwatch Bluetooth, Oro Rosa, 40 mm</p>
+                <div class="iconosBottom">
+                    <img src="images/novedad.png" height="40px" width="40px">
+                    <img src="images/topventas.png" height="40px" width="40px">
+                    <img src="images/stock-1.png" height="30px" width="30px">
+                </div>
+            </div>
+        </div>
+        <div id="articulo3" class="articulo">
+            <img src="images/reloj.jpg" id="imagen3">
+            <div class="menuHover">
+                <img src="images/vista-previa.png" height="30px" width="30px">
+                <img src="images/listadeseo.png" height="30px" width="30px">
+                <img src="images/comparador.png" height="30px" width="30px">
+                <img src="images/configurador.png" height="30px" width="30px">
+                <img src="images/carro.png" height="30px" width="30px">
+            </div>
+            <div class="content">
+                <div id="precio"><span>85.99</span></div>                
+                <p>Reloj de cuarzo con correa de tela informal...a</p>
+                <div class="iconosBottom">
+                    <img src="images/novedad.png" height="40px" width="40px">
+                    <img src="images/topventas.png" height="40px" width="40px">
+                    <img src="images/stock-3.png" height="30px" width="30px">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

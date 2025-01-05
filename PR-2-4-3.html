@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{font-family: sans-serif;}
+        a{
+            display: inline-block;
+            width: 128px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            text-decoration: none;
+        }
+        nav{
+            a{                                
+                font-family: Impact, sans-serif;
+                border-radius: 3px;                
+                color: black;
+                background: #ff1493;
+            }
+            a:nth-child(2){
+                background: #bc8f8f;
+            }
+            a:nth-child(3){
+                background: tomato;
+            }
+        }
+        article{
+            padding: 1px 5px 100px;
+        }
+        article a{
+            background: green;
+            color: white;
+        }
+        article:nth-of-type(1){
+            background: #808080;
+        }
+        article:nth-of-type(2){
+            background: #ff8c00;
+        }
+        article:nth-of-type(3){
+            background: #00ced1;
+        }
+
+        :target{
+            font-size: 'Courier New';
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <p id="Ini"></p>
+        <nav>
+            <a href="#t1">Primero</a>
+            <a href="#t2">Segundo</a>
+            <a href="#t3">Tercero</a>
+        </nav>
+        <article id="t1">
+            <h2>Articulo 1</h2>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            <a href="#Ini">Volver</a>
+        </article>
+        <article id="t2">
+            <h2>Articulo 2</h2>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            <a href="#Ini">Volver</a>
+        </article>
+        <article id="t3">
+            <h2>Articulo 3</h2>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            <a href="#Ini">Volver</a>
+        </article>
+    </section>
+</body>
+</html>

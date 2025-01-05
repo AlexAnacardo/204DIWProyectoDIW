@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*Documento en general*/
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            height: 100%;
+        }
+        body{
+            height: 100%;
+        }
+
+        #pestañas div{            
+            width: 30%;
+            height: 40%;
+            margin: 0 auto;
+            position: absolute;
+            top: 5%;
+            left: 33%
+        }
+        a{
+            position: absolute;
+            height: 5%;
+            width: 6%;
+            border-radius: 4px 4px 0px 0px;  
+            border: none;  
+            text-decoration: none; 
+            color: black;
+            text-align: center;               
+            line-height: 250%;
+        }
+        a:nth-of-type(1){
+            left: 35%;
+            background: #67e767;
+        }
+        a:nth-of-type(2){
+            left: 42%;
+            z-index: 0;
+            background: #5178e4;
+        }
+        a:nth-of-type(3){
+            left: 49%;
+            z-index: 0;
+            background: #ebb7d9;
+        }
+
+        div:nth-of-type(1){
+            background: #67e767;
+        }
+
+        div:nth-of-type(2){
+            background: #5178e4;
+        }
+        
+        div:nth-of-type(3){
+            background: #ebb7d9;
+        }
+        #c1:target{
+            z-index: 4;
+        }
+        #c2:target{
+            z-index: 4;
+        }
+        #c3:target{
+            z-index: 4;
+        }
+        
+    </style>
+</head>
+<body>    
+        <div id="menuPestañas">
+            <a href="#c1">Primera</a>
+            <a href="#c2">Segunda</a>
+            <a href="#c3">Tercera</a>
+        </div>
+        <div id="pestañas">
+            <div id="c1" class="verde">
+                <p>Este es el contenido de la 1ª pestaña</p>
+            </div>
+            
+            <div id="c2" class="azul">
+                <p>Este es el contenido de la 2ª pestaña</p>
+            </div>
+            
+            <div id="c3" class="rosa">
+                <p>Este es el contenido de la 3ª pestaña</p>
+            </div>
+        </div>    
+</body>
+</html>

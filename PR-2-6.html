@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2-6</title>
+    <style>
+        section{            
+            width: 400px;
+            height: 320px;
+            position: relative;
+            margin: 0 auto;
+        }
+
+        div{            
+            width: 200px;
+            height: 200px;
+        }
+
+        #rojo{
+            background-color: #f05050;
+            position: absolute;
+            right: 0px;
+            top: 4px;
+            z-index: 1;
+        }
+
+        #amarillo{
+            background-color: rgb(225, 225, 101);
+            position: absolute;
+            z-index: 2;
+            height: 130px;
+            width: 130px;
+            left: 140px;
+            top: 100px;
+        }
+
+        #azul{
+            background-color: rgb(3, 3, 196);
+            position: absolute;
+            top: 120px;
+            right: 0px;
+            z-index: 0;
+        }
+
+        #morado{
+            background-color: rgb(96, 96, 229);
+            position: absolute;
+            left: 0px;
+            top: 120px;
+            z-index: 1;
+        }
+
+        #verde{
+            background-color: rgb(19, 182, 111);
+            position: absolute;
+            width: 220px;
+            z-index: 0;
+        }
+
+        #rojo:hover{
+            z-index: 3;
+        }
+        #azul:hover{
+            z-index: 3;
+        }
+        #morado:hover{
+            z-index: 3;
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <div id="rojo">1</div>
+        <div id="amarillo">2</div>
+        <div id="azul">3</div>
+        <div id="morado">4</div>
+        <div id="verde">5</div>
+    </section>
+</body>
+</html>

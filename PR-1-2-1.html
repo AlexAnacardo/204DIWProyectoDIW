@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1-2-1</title>
+    <style>
+
+        *{
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        img{
+            display: block;
+            max-width: 100px;
+            margin: 0 auto;
+        }
+        table{
+            width: 100%;
+            table-layout: fixed;
+            border-collapse: collapse;
+            tr{
+                background: #999999;
+                td{
+                    width: 100px;
+                    height: 100px;
+                    text-align: center;
+                }                
+            }
+        }        
+        .container{
+            background: #ff0033; 
+            height: 100%;
+            padding: 0.25px;
+            overflow: hidden;
+            nav,main,aside{
+                display: inline-block;
+                vertical-align: top;
+                background: #cccccc;
+            }
+            h2,h3{
+                text-align: center;
+            }
+            nav{
+                background: #dddddd;
+                width: 20%;
+                margin: 5px;
+                ul{
+                    list-style: none;
+                }
+            }
+            main{
+                background: #cccccc;
+                width: 56%;
+                height: 700px;
+                
+            }
+        }
+        footer{
+            background: #555555;
+            height: 15vh;
+            width: 100%;
+            text-align: center;
+            margin-top: 0;
+            clear: both;
+            padding-top: 25px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <table>
+            <tr>
+                <td>
+                    <img src="http://picsum.photos/id/250/1400/1400" alt="">
+                </td>
+                <td>
+                    <h1>CABECERA</h1>
+                </td>
+                <td>
+                    <img src="http://picsum.photos/id/251/100/100" alt="">
+                </td>
+            </tr>
+        </table>
+    </header>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Opciones</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <main>
+            <article>
+                <h2>Mi 1 articulo</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus arcu sed luctus ullamcorper. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin malesuada facilisis dui sit amet rutrum. Donec vel quam vitae metus lacinia congue sit amet eget massa. Pellentesque ac pretium elit. Proin dictum lobortis dolor, vel venenatis dui. Sed vitae lacus est. Sed et euismod sem. Praesent maximus mauris faucibus, rhoncus tellus a, laoreet nisl</p>
+
+            </article>
+            <article>
+                <h2>Mi 2 articulo</h2>
+                <h3>Subtitulo 2 articulo</h3>
+                <p>In sit amet rhoncus est, non mattis neque. Duis sagittis erat malesuada turpis dictum molestie. Fusce tellus metus, vehicula euismod ante a, molestie varius erat. Morbi ut faucibus orci. Pellentesque elementum consectetur leo, ut gravida ipsum maximus nec. Quisque fringilla eros nec neque bibendum hendrerit. In hac habitasse platea dictumst. Mauris fringilla purus et nisl fringilla mattis vitae ut sapien. Proin vel fermentum lacus. Cras elit sapien, luctus eu odio ut, suscipit condimentum nibh. Morbi sed sagittis ex, eget malesuada enim. Donec non tempor justo. Pellentesque nulla ligula, hendrerit quis mi vitae, tempor tempus tortor. Phasellus sit amet velit libero. Etiam quis purus in ligula sagittis tempus eu sit amet leo. Nullam vestibulum feugiat urna, non ultricies ligula rhoncus sit amet</p>
+            </article>
+            <article>
+                <h2>Mi 3 articulo</h2>
+                <p>Proin ipsum odio, iaculis nec nunc nec, tempor consectetur ex. Pellentesque commodo porttitor metus gravida eleifend. Sed viverra cursus lorem, ut hendrerit libero ultrices sed. Phasellus velit justo, fermentum in auctor sed, euismod at risus. Nam eget odio vitae eros laoreet efficitur et sed leo. Maecenas ac est quis orci posuere pharetra. Sed eget pretium sem. Ut sed blandit arcu. Phasellus mattis placerat scelerisque. Nulla quis neque laoreet, sodales eros eget, sollicitudin lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos</p>
+            </article>
+        </main>
+        <aside>
+            <p>Aqui tenemos nuestra seccion de links interesantes <br>
+            Elemento: details</p>
+            <details>
+                <summary>Lista datos summary</summary>
+                <ol>
+                    <li>Opcion 1</li>
+                    <li>Opcion 2</li>
+                    <li>Opcion 3</li>
+                </ol>
+            </details>
+        </aside>
+    </div>
+    <footer>
+        <p>@Todos los derechos reservados</p>
+        <progress value="30" max="100">30%</progress>
+    </footer>
+</body>
+</html>

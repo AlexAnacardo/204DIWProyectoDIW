@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: Calibri, sans-serif;
+        }
+        form{
+            background: #fcf7bb;
+        }
+        fieldset:nth-of-type(1){
+            label{
+                display: inline-block;
+                width: 140px;
+                margin-bottom: 25px;
+            }
+            input{                
+                height: 40px;
+            }
+            input:nth-of-type(1){
+                width: 256px;
+            }
+            input:nth-of-type(2){
+                width: 280px;
+                border: none;
+                background: #f5c0cc;
+            }
+            input:nth-of-type(3){
+                width: 308px;                
+            }
+            #mail:valid{
+                background: #9fffd2;
+            }
+            #mail:valid{
+                background: #9fffd2;
+            }
+            #mail:invalid{
+                background: red;
+            }
+            input:nth-of-type(4){
+                width: 128px;                
+                background: #f5c0cc;
+                border: none;
+            }
+        }
+        fieldset:nth-of-type(2){
+            table{
+                width: 100%;
+                table-layout: fixed;
+                
+            }
+            td{
+                height: 48px;
+                width: 50%;
+                background: #cec2f9;
+            }
+        }
+        button{
+            display: block;
+            width: 128px;
+            height: 64px;
+            margin: auto;
+            border-radius: 15px;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <fieldset>
+                <legend>Pseudo-clases en formularios</legend>
+                <label for="nom">:autofocus</label>
+                <input type="text" id="nom" placeholder="Nombre" autofocus maxlength="40">
+                <br>
+                <label for="apel">:required</label>
+                <input type="text" id="apel" placeholder="Apellidos" required>
+                <br>                
+                <label for="mail">:valid/:invalid</label>
+                <input type="email" id="mail" placeholder="mail@mail.com" minlength="8" maxlength="128">
+                <br>
+                <label for="passwd">Password (8 min)</label>
+                <input type="password" id="passwd" minlength="8" required> 
+            </fieldset>
+            
+            <fieldset>
+                <legend>look forfind</legend>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="fich">Archivo a subir</label>
+                            <input type="file" id="fich">
+                        </td>
+                        <td>
+                            <label for="col">Elige tu color:</label>
+                            <input type="color" id="col">
+                        </td>
+                        <td>
+                            <label for="order">Fecha pedido</label>
+                            <input type="date" id="order">
+                        </td>
+                        <td>
+                            <label for="time">Hora:</label>
+                            <input type="time" id="time">
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend>:checked, :in-range /:out-of-range</legend>
+                Sexo:
+                <input type="radio" name="sexo" id="hbr">
+                <label for="hbr">Hombre</label>
+                <input type="radio" name="sexo" id="mjr" checked>
+                <label for="mjr">Mujer</label>
+                <br><br>
+                Aficiones:
+                <input type="checkbox" id="musi">
+                <label for="musi">Musica</label>
+                <input type="checkbox" id="sport">
+                <label for="sport">Deportes</label>
+                <input type="checkbox" id="read">
+                <label for="read">Lectura</label>
+                <input type="checkbox" id="kitchen">
+                <label for="kitchen">Cocina</label>
+                <br><br>
+                <label for="age">Edad (1-120)</label>
+                <input type="number" id="age" min="1" max="120">
+                <label for="search">Buscar</label>
+                <input type="search" id="search">
+            </fieldset>
+            <button type="submit">Enviar datos</button>
+        </form>
+    </div>
+</body>
+</html>

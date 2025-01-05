@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .container{
+            width: 98vw;
+            height: 98vh;
+            background: #34495e;
+            margin-top: 0.1px; 
+            padding: 6px;       
+            nav{
+                position: relative;
+                padding:  5px;
+                border: 1px solid white;
+                background-color: #297777;
+                input{
+                    display: none;
+                }
+                label{
+                    display: flex;
+                    
+                    width: 56px;
+                    height: 56px;
+                    background: #666666;
+                    border-radius: 5px;
+                }
+                label::before{                                       
+                    content: "";
+                    display: block;
+                    width: 50px;
+                    height: 6px;
+                    margin: 10px auto;                    
+                    background-color: white;
+                    box-shadow: 0px 14px 0 white, 0px 28px 0 white;                    
+                }
+                ul{
+                    background: #5c876a;
+                    padding: 0;
+                    width: 240px;
+                    height: 60vh;
+                    position: absolute;
+                    top: 52px;left:-3000px;
+                    list-style: none;
+                    font-family: sans-serif;
+                    transition: all 1s ease-in-out;
+                    a{
+                        display: block;
+                        line-height: 240%;
+                        width: 91.5%;
+                        height: 40px;
+                        padding: 10px;
+                        text-decoration: none;
+                        border-bottom: 1px solid #aaa;
+                        color: white;
+                    }
+                    a:hover{
+                        background-color: pink;
+                    }
+                }
+                #chk:checked ~ ul{
+                    left: 0;                    
+                }
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <input type="checkbox" name="" id="chk">
+            <label for="chk"></label>
+            <ul>
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Alumnos</a></li>
+                <li><a href="">Secretaria</a></li>
+                <li><a href="">Profesor</a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>

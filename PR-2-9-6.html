@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PR-2-9-6</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        img{
+            display: block;
+            max-width: 100%;
+            height: 40px;
+        }
+        .container{
+            width: 100vw;height: 100vh;
+            display: flex;
+            flex-flow: column;
+            justify-content: start;
+            .table article{
+                display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid black; 
+            }
+            .table1{
+                display: flex;
+                flex-flow: wrap;
+                flex: 0 128;
+                
+                margin-bottom: 25px;
+                *{
+                    flex: 1 25%;
+                    height: 32px;
+                }                
+                article:nth-child(-n+4){background: purple;}
+                article:nth-child(2n+1):nth-child(n+4){background: #d7b886;}
+                article:nth-child(2n):nth-child(n+5){background: cyan;}                
+            }
+
+            .table2{                
+                flex: 0 240px; 
+                display: flex;
+                flex-flow: column;
+                .row{
+                    flex:0 100%;height: 48px;
+                    display: flex;                    
+                }
+                .row1{                    
+                    background: #a2cd26;
+                    article{
+                        flex: 1 25%;
+                    }
+                }
+                .row2{                    
+                    background: #d7b886;
+                    article:nth-of-type(even){
+                        flex: 25%;
+                    }
+                }
+                .row3{
+                    background: cyan;
+                    article:first-child(), article:nth-last-child(){flex: 25%;}
+                    article:nth-of-type(-n+4):nth-of-type(n+2){flex: 16.5%;}
+                }
+                .row4{
+                    background: #ef8c30;                    
+                    article:nth-child(-n+5){flex: 5%;}
+                    article:nth-child(6){flex: 50%;}
+                    article:nth-child(7){flex: 25%;}
+                }
+                .row5{
+                    background: #bf5c5e;
+                    article:nth-child(-n+2){flex: 12.5%;}
+                    article:nth-child(-n+4):nth-of-type(n+3){flex: 25%;}
+                    article:nth-child(6){flex: 50%;}
+                    article:nth-child(7){flex: 25%;}
+                }
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="table table1">
+            <article>1</article>
+            <article>2</article>
+            <article>3</article>
+            <article>4</article>
+            <article>5</article>
+            <article>6</article>
+            <article>7</article>
+            <article>8</article>
+            <article>9</article>
+            <article>10</article>
+            <article>11</article>
+            <article>12</article>
+            <article>13</article>
+            <article>14</article>
+            <article>15</article>
+            <article>16</article>
+        </div>
+
+        <div class="table table2">
+            <div class="row row1">
+                <article>1</article>
+                <article>2</article>
+                <article>3</article>
+                <article>4</article>
+            </div>
+            <div class="row row2">
+                <article><img src="http://picsum.photos/100/100" alt=""></article>
+                <article><img src="http://picsum.photos/100/100" alt=""></article>
+                <article><img src="http://picsum.photos/100/100" alt=""></article>
+            </div>
+            <div class="row row3">
+                <article>8</article>
+                <article>9</article>
+                <article>10</article>
+                <article>11</article>
+                <article>12</article>
+            </div>
+            <div class="row row4">
+                <article></article>
+                <article></article>
+                <article></article>
+                <article></article>
+                <article></article>
+                <article></article>
+                <article></article>
+            </div>
+            <div class="row row5">
+                <article>20</article>
+                <article>21</article>
+                <article>22</article>
+                <article>23</article>
+                <article>24</article>
+                <article>25</article>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
