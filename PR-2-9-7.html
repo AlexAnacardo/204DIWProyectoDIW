@@ -6,17 +6,77 @@
     <title>Document</title>
     <style>
         *{box-sizing:  border-box;}
-        #one{
+        .container{
+            position: relative;
+            background: #7fa5e3;
+            width: 800px; height: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .carousel{
+                position: relative;
+                width: 500px;
+                height: 400px;
+                outline: 3px solid purple;
+                border-radius: 5px;
+                overflow: hidden;
+            }
+            .photos{            
+                width: 500px;
+                height: 400px;                
+                display: flex;
+                transition: all 0.5s ease;
+            }
+            .buttons{
+                position: absolute;
+                bottom: 15px;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+            }
+        }
+
+        input{
+            display: none;
+        }
+
+        label{
+            content: "";
             display: block;
-            width: 32px;height: 32px;
-            opacity: 0;
+            width: 32px; height: 32px;            
+            background: #f6beca;
+            border-radius: 50%;
+        }
+        
+        #one:checked ~ .photos{
+            transform: translate(0px);
+        }
+        #two:checked ~ .photos{
+            transform: translate(-700px);
+        }
+        #three:checked ~ .photos{
+            transform: translate(-1500px);
+        }
+        #four:checked ~ .photos{
+            transform: translate(-2000px);
+        }
+        #five:checked ~ .photos{
+            transform: translate(-2700px);
+        }
+        #one:checked ~ .buttons #lbl1,        
+        #two:checked ~ .buttons #lbl2,
+        #three:checked ~ .buttons #lbl3,
+        #four:checked ~ .buttons #lbl4,
+        #five:checked ~ .buttons #lbl5{
+            background: palevioletred;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="carousel">
-            <input type="radio" name="rd" id="one">
+            <input type="radio" name="rd" id="one" checked>
             <input type="radio" name="rd" id="two">
             <input type="radio" name="rd" id="three">
             <input type="radio" name="rd" id="four">
@@ -29,7 +89,11 @@
                 <img src="http://picsum.photos/id/369/500/300" alt="">
             </div>
             <div class="buttons">
-
+                <label for="one" id="lbl1"></label>
+                <label for="two" id="lbl2"></label>
+                <label for="three" id="lbl3"></label>
+                <label for="four" id="lbl4"></label>
+                <label for="five" id="lbl5"></label>
             </div>
         </div>
     </div>
