@@ -13,32 +13,18 @@
         body{
             background: #e5e5e5;
         }
-        .container{              
-            width: 700px;height: 700px;
-            display: flex;
-            flex-flow: column wrap;
-            main{width: 60%; flex: 55%;}
-            section{
-                display: flex;
-                flex-direction: row;
-                width: 60%; flex: 30%;                
-                .art1{                    
-                    flex: 50%;
-                    color: white;
-                }
-                .art2{                    
-                    flex: 50%;
-                }
-            }
-            footer{width: 60%; flex: 15%;}
-            nav{width: 40%; flex: 20%;}
-            aside{width: 40%; flex: 80%;}
+        .container{
+            position: relative;         
+            width: 700px;height: 700px;           
+            
             /* COLORES */
+            border: 4px solid black;
             main{
                 background: #cdce95;                
             }
             .art1{
                 background: #230909;
+                color: white;
             }
             .art2{
                 background: #6b4b4b;
@@ -53,11 +39,17 @@
                 background: #8d3ccd;
             }
 
-            main, footer, nav, aside, .art1, .art2{
+            display: flex;
+            flex-flow: column wrap;
+            main{width: 40%; flex: 100%}
+            section{
                 display: flex;
-                justify-content: center;
-                align-items: center;
+                article{flex:1}
             }
+            section{width: 30%; flex: 70%}
+            footer{width: 30%; flex: 30%}
+            nav{width: 30%; flex: 20%;}
+            aside{width: 30%; flex: 80%}
         }
     </style>
 </head>
