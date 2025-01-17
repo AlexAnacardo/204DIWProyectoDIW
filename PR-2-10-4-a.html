@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .grid{
+        display: grid;
+        grid-template: repeat(5, 60px)/ 100px 100px 200px;
+        grid-auto-flow: column;
+        margin-bottom: 20px;
+        article{
+            display: grid;
+            justify-content: center;
+            align-content: center;
+        }
+    }
+    article:nth-child(odd){
+        background-color: rgb(100, 162, 100);
+    }
+    article:nth-child(even){
+        background-color: green;
+    }
+    .flex{
+        display: flex;
+        flex-flow: column wrap;
+        height: 300px;
+        width: 400px;
+        article{
+            height: 60px;
+            width: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        article:nth-child(n+11){
+            width: 200px;
+        }
+    }
+
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <article>1</article>
+        <article>2</article>
+        <article>3</article>
+        <article>4</article>
+        <article>5</article>
+        <article>6</article>
+        <article>7</article>
+        <article>8</article>
+        <article>9</article>
+        <article>10</article>
+        <article>11</article>
+        <article>12</article>
+    </div>
+    <div class="flex">
+        <article>1</article>
+        <article>2</article>
+        <article>3</article>
+        <article>4</article>
+        <article>5</article>
+        <article>6</article>
+        <article>7</article>
+        <article>8</article>
+        <article>9</article>
+        <article>10</article>
+        <article>11</article>
+        <article>12</article>
+    </div>
+</body>
+</html>

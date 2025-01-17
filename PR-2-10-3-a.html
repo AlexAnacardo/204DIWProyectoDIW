@@ -5,34 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{box-sizing: border-box;}
-        .container{
-            width: 100vh; height: 100vh;
+        *{box-sizing: border-box; margin:0}
+        img{
+            max-width: 100%;
+            max-height: 100%;
+            display: block;
+        }
+        .container{        
+            width: 100vw; height: 100vh;
+            padding: 10px;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
-            gap: 5px;
+            grid-template-columns: repeat(auto-fit, minmax(352px,1fr));
+            grid-auto-rows: 450px;
+            gap: 15px;
 
             .card{
-                width: 350px; height: 400px;
-                :nth-of-type(1){
+                width: 350px; height: 400px;                
+            }
+            .card:nth-of-type(1){
                     background: #c8c8c8;
                 }
-                :nth-of-type(2){
+                .card:nth-of-type(2){
                     background: #e57574;
                 }
-                :nth-of-type(3){
+                .card:nth-of-type(3){
                     background: #a5bf39;
                 }
-                :nth-of-type(4){
+                .card:nth-of-type(4){
                     background: #52af9a;
                 }
-                :nth-of-type(5){
+                .card:nth-of-type(5){
                     background: #474896;
                 }
-                :nth-of-type(6){
+                .card:nth-of-type(6){
                     background: #69266b;
                 }
-            }
         }
     </style>
 </head>
@@ -43,35 +50,35 @@
                 <h2>El titulo</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque omnis necessitatibus ipsam unde beatae aperiam repudiandae accusamus natus quisquam aliquid. Provident excepturi modi iste adipisci, perspiciatis illum molestiae porro recusandae!</p>
             </header>
-            <img src="http://picsum.photos/id/350/300/300" alt="">
+            <img src="http://picsum.photos/id/350/350/350" alt="">
         </div>
         <div class="card">
             <header>
                 <h2>El titulo</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque omnis necessitatibus ipsam unde beatae aperiam repudiandae accusamus natus quisquam aliquid. Provident excepturi modi iste adipisci, perspiciatis illum molestiae porro recusandae!</p>
             </header>
-            <img src="http://picsum.photos/id/355/300/300" alt="">
+            <img src="http://picsum.photos/id/355/350/350" alt="">
         </div>
         <div class="card">
             <header>
                 <h2>El titulo</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque omnis necessitatibus ipsam unde beatae aperiam repudiandae accusamus natus quisquam aliquid. Provident excepturi modi iste adipisci, perspiciatis illum molestiae porro recusandae!</p>
             </header>
-            <img src="http://picsum.photos/id/354/300/300" alt="">
+            <img src="http://picsum.photos/id/354/350/350" alt="">
         </div>
         <div class="card">
             <header>
                 <h2>El titulo</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque omnis necessitatibus ipsam unde beatae aperiam repudiandae accusamus natus quisquam aliquid. Provident excepturi modi iste adipisci, perspiciatis illum molestiae porro recusandae!</p>
             </header>
-            <img src="http://picsum.photos/id/353/300/300" alt="">
+            <img src="http://picsum.photos/id/353/350/350" alt="">
         </div>
         <div class="card">
             <header>
                 <h2>El titulo</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque omnis necessitatibus ipsam unde beatae aperiam repudiandae accusamus natus quisquam aliquid. Provident excepturi modi iste adipisci, perspiciatis illum molestiae porro recusandae!</p>
             </header>
-            <img src="http://picsum.photos/id/352/300/300" alt="">
+            <img src="http://picsum.photos/id/352/350/350" alt="">
         </div>
         
     </div>
