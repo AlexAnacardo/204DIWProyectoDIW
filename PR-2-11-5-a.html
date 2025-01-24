@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PR-2-11-5</title>
+    <style>
+        *{box-sizing: border-box;}
+        .container{
+            width: 600px;height: 600px;
+            background: yellowgreen;
+            animation: changeColor 4s infinite alternate;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @keyframes changeColor{
+            to{background: cornflowerblue;}
+        }
+
+        .box{
+            position: relative;
+            width: 550px; height: 550px;
+            background: #73e0cf;
+            .suelo{
+                position: absolute;
+                bottom: 10px;
+                left: 27.5px;
+                width: 90%; height: 65%;
+                background: transparent;
+                border-bottom: 15px solid black;
+                border-left: 15px solid black;
+                border-right: 15px solid black;
+            }
+            .bola{
+                position: absolute;
+                height: 50px; width: 50px;
+                border-radius: 50%;
+                background: red;
+                bottom: 25px; left: 42.5px;
+                animation: botarBola 2s infinite alternate-reverse;
+            }            
+        }
+        @keyframes botarBola {
+            0%{  bottom: 25px; left: 8%;}
+            25%{  bottom: 300px; left: 27%;}
+            50%{  bottom: 25px; left: 45%;}
+            75%{ bottom: 300px; left: 63%;}
+            100%{  bottom: 25px; left: 83%;}
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="box">
+            <article class="suelo"></article>
+            <article class="bola"></article>
+        </section>
+    </div>
+</body>
+</html>
