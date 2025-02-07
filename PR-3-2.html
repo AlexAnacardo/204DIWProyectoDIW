@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <picture class="pct">
+            <source media="(orientation:portrait)" srcset="http://picsum.photos/id/1/400/610">
+            <source media="(orientation:landscape)" srcset="http://picsum.photos/id/2/600/210">
+            <source media="(min-width: 1280px)" srcset="http://picsum.photos/id/26/1280/800/" alt="accesorios">
+            <source media="(min-width: 641px)" srcset="http://picsum.photos/id/85/650/650/" alt="tractor">
+            <source media="(max-width: 640px)" srcset="http://picsum.photos/id/80/150/150/" alt="piñas">
+            <img src="http://picsum.photos/id/100/150/150/" alt="las condiciones no se cumplen">
+        </picture>
+    </div>    
+    <div class="wrapper">
+        <video controls poster="./images/PR-3-2/img-h.jpg" width="600px">
+            <source src="./images/PR-3-2/nieveBenavente_n.mp4" type="video/mp4">
+            <source src="./images/PR-3-2/vr1.mp4" type="video/mp4">
+            <p>Codec de video no soportado</p>
+        </video>
+    </div>
+    <div class="wrapper">
+        <audio controls>
+            <source src="./images/PR-3-2/m2.mp3" type="audio/mp3">
+            <source src="./images/PR-3-2/m3.mp3" type="audio/mp3">
+            <source src="./images/PR-3-2/m4.mp3" type="audio/mp3">
+            <p>Codec de audio no soportado</p>
+        </audio>
+    </div>
+</body>
+</html>

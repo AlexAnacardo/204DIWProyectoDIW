@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            color: white; font-family: 
+            sans-serif;
+
+            --v1: 4s; --v2: 2s; --stop: 0s;
+        }
+        .container{
+            width: 600px; height: 600px;
+            background: #000;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            gap: 45px;
+            h1{color: white;}
+        }
+        .rodamiento{
+            width: 300px; height: 300px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(0,0,255,0) 20%, rgba(255,255,255,1) 20%, rgba(255,255,255,1) 100%);
+            border: 15px dashed black;
+            
+            animation: girar var(--v) linear infinite;
+        }
+        @keyframes girar{
+            to{
+                transform: rotateZ(360deg);
+            }
+        }
+        input{display: none;}
+        label{border: 2px solid red}
+        #v1:checked ~ .rodamiento{ --v: 4s;}
+        #v2:checked ~ .rodamiento{ --v: 2s;}
+        #vstop:checked ~ .rodamiento{ --v: 0s;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>RODAMIENTO</h1>
+        <!--
+        <input type="radio" id="on" name="rd">
+        <label for="on">ON</label>
+        <input type="radio" id="off" name="rd" checked>
+        <label for="off">OFF</label>
+        -->
+
+        <input type="radio" id="v1" name="rd">
+        <input type="radio" id="v2" name="rd">
+        <input type="radio" id="stop" name="rd">
+        
+        <div class="labels">
+            <label for="v1">50km/h</label>
+            <label for="v2">100km/h</label>
+            <label for="stop">STOP</label>
+        </div>
+        <div class="rodamiento"></div>
+    </div>
+</body>
+</html>

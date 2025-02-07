@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 600px;
+            height: 500px;
+            background: #dddddd;
+            .cara{
+                position: relative;
+                top: 30px;
+                width: 250px; height: 250px;
+                background: #7e99ce;
+                border-radius: 6rem 6rem 10rem 10rem / 8rem 8rem 10rem 10rem;
+                animation: giro 3s linear infinite alternate;
+            }
+            .eye{
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: white;
+                height: 25px; width: 55px;
+                border-radius: 100%;
+
+                .borde{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: cyan;
+                    height: 25px; width: 25px;
+                    border-radius: 50%;
+                    .pupila{
+                        background-color: black;
+                        height: 20px; width: 20px;
+                        border-radius: 50%;
+                    }
+                }
+            }
+            .eye:nth-of-type(1){top: 40px; left: 40px;}
+            .eye:nth-of-type(2){top: 40px; left: 150px;}
+            .nose{
+                background-color: orange;
+                height: 80px; width: 20px;
+                border-radius: 30%  30% 50% 50%;
+                position: absolute;
+                top: 80px;
+                left: 115px;
+            }
+            .mouth{
+                background: red;
+                width: 70px; height: 10px;
+                position: absolute;
+                top: 180px; left: 90px;
+                border-radius: 0 0 50% 50%/0 0 100% 100%;                 
+            }
+        }
+        @keyframes giro{
+            0%{
+                left:0%;
+                transform: rotate(0deg);
+            }
+            50%{
+                left:30%;
+                transform: rotate(180deg);
+            }
+            100%{
+                left: 58%;
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cara">
+            <div class="eye">
+                <div class="borde">
+                    <div class="pupila"></div>
+                </div>                
+            </div>
+            <div class="eye">
+                <div class="borde">
+                    <div class="pupila"></div>
+                </div> 
+            </div>
+            <div class="nose"></div>
+            <div class="mouth"></div>
+        </div>
+    </div>
+</body>
+</html>
