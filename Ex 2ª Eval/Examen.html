@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen 2a Eval Alex Asensio Sanchez</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        
+        #barraBusqueda{
+            background-color: black;
+            color: white;
+            height: 6vh;
+            display: flex;
+            justify-content: flex-end;
+
+            form{
+                margin-right: 4%;
+                height: 100%;
+                width: 11%;
+                font-size: 210%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                input{
+                    height: 50%;
+                }
+            }
+        }
+
+        #contenedorCabecera{
+            
+        }
+
+        #cabecera{
+            position: relative;
+            height: 11.5vh;
+            background-color: gray;
+            font-size: 140%;            
+            img{
+                height: 100px;
+                margin-left: 3%;
+                margin-top: 5px;
+            }
+            p{
+                color: white;
+                position: absolute;
+            }
+            p:nth-of-type(1){
+                right: 30%;
+                top: 40%;
+            }
+            p:nth-of-type(2){                
+                right: 10%;
+                top: 40%;
+            }
+            p:hover{
+                text-decoration: underline;
+            }
+        }
+        
+        #contenedorCars{
+            height: 0;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 200%;
+            transition: all 0.4s linear;
+
+            a:nth-of-type(1){
+                margin-bottom: 1%;
+            }
+            a:nth-of-type(2){
+                margin-top: 1%;
+            }
+        }
+        #contenedorTecnologias{
+            height: 0;
+            overflow: hidden;
+            transition: all 0.4s linear;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            .caja{
+                position: relative;
+                background-color: white;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 30vh;
+                width: 30vh;
+
+                span:nth-of-type(1){
+                    position: absolute;
+                    top: 17px;
+                }
+                span:nth-of-type(2){
+                    position: absolute;
+                    bottom: 17px;
+                }
+
+                img{
+                    width: 50%;
+                    height: 50%;
+                }
+                img:hover{
+                    width: 60%;
+                    height: 60%;
+                }
+            }
+
+            .caja:hover{
+                box-shadow: 3px 3px 3px 3px;
+            }
+        }
+        
+        #pCars:hover ~ #contenedorCars{
+            background-color: white;
+            height: 50vh;
+        }
+        #contenedorCars:hover{
+            background-color: white;
+            height: 50vh;
+        }
+
+        #pTecnologias:hover ~ #contenedorTecnologias{
+            background-color: pink;
+            height: 50vh;
+        }
+        #contenedorTecnologias:hover{
+            background-color: pink;
+            height: 50vh;
+        }
+
+        #cuerpo{
+            background-color: rgb(38, 132, 126);
+            font-size: 120%;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            height: 500vh;
+        }
+    </style>
+</head>
+<body>
+    <div id="barraBusqueda">
+        <form>
+            <label for="campoTextoBuscar">&#x2315</label>
+            <input type="text" id="campoTextoBuscar" placeholder="buscar">
+        </form>
+    </div>
+    <div id="contenedorCabecera">
+        <div id="cabecera">
+            <img src="logo.png">
+            <p id="pCars">Acerca de CARS</p>                
+            <p id="pTecnologias">Tecnologias</p>                
+
+            <div id="contenedorCars">                
+                <a href="#">THE CARS</a>
+                <a href="#">Noticias</a>
+            </div>
+
+            <div id="contenedorTecnologias">
+                <div class="caja">
+                    <span>PILA HIDROGENO</span>
+                    <img src="img1.png">
+                    <span>DESCUBRE MAS -></span>
+                </div>
+                <div class="caja">
+                    <span>¿Qué es un NEV?</span>
+                    <img src="img2.png">
+                    <span>DESCUBRE MAS -></span>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <div id="cuerpo">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ducimus, necessitatibus a minima quisquam, provident nemo earum maxime nulla officiis voluptate. Consequuntur eveniet sint voluptatum qui dignissimos quos molestias sed!
+        Ea, repellendus neque. Delectus architecto amet dolor eligendi consequatur, expedita suscipit laboriosam iure ad obcaecati rerum numquam, quae commodi eius minus ea ex cum deserunt veritatis pariatur qui! Delectus, porro!
+        Maiores, at mollitia. Odio magnam quos officia necessitatibus ad maxime tempore aliquid quia neque iusto, labore fugit quo qui nesciunt dolorum impedit! Officia voluptate dolorum, eos cumque vero placeat corrupti?
+        Similique dolorum sequi dolores perspiciatis culpa illum commodi vitae veniam porro quibusdam? Assumenda reiciendis enim non et odit illum, totam, quo iusto ipsum sint optio error, necessitatibus laborum neque in.
+        Accusantium vero debitis, repudiandae ut eveniet ea voluptas, sint iure impedit provident neque nobis praesentium. Sit tenetur tempora consequuntur ea rerum reiciendis quam praesentium? Magnam, qui corrupti? Alias, rem adipisci?
+        Itaque fuga ad maxime quo magnam molestias quidem consequuntur, ipsum nobis magni? Odio, eligendi quasi. Nulla animi nobis, illum quae quia eum molestiae obcaecati libero aperiam adipisci nesciunt alias provident.
+        Reprehenderit eligendi nam id nemo earum consectetur tempore qui fuga! Voluptates consequuntur quasi aliquam. Aspernatur provident soluta sint eum odio molestiae animi quisquam, at totam iste quos quam deserunt dolorum.
+        Quae vero reprehenderit quidem veniam officiis fugit beatae tempore a blanditiis ea est hic itaque pariatur voluptates soluta accusamus molestias, maxime quos laborum impedit eum. Debitis veniam doloribus harum! Eveniet?
+        Dolorem, sapiente? Non rerum deserunt exercitationem culpa odio molestias et aliquid doloribus nulla? Non qui magnam fugiat, cupiditate modi rerum assumenda veritatis ut culpa, eos dolores a nulla cum quaerat.
+        Exercitationem suscipit impedit tempore provident voluptas nemo non obcaecati repellendus perspiciatis qui? Alias, doloribus repellat? Sunt, minus, nesciunt repellat incidunt veniam blanditiis eaque, dolor quas temporibus alias adipisci odio laborum.
+        Hic adipisci molestiae quas quae? Assumenda ad aut aperiam, perferendis id voluptates nisi, sapiente et quos molestias ratione voluptatum eveniet quas laudantium repellat at ipsum officiis soluta. Voluptate, explicabo omnis?
+        Nulla nostrum adipisci natus quidem officia, commodi fuga, laboriosam enim libero pariatur, facilis aliquid velit. Voluptatum dignissimos id corrupti error voluptas repudiandae eum consequuntur rerum nisi perspiciatis magni, suscipit ea?
+        Minima deleniti libero quas unde obcaecati! Maiores enim voluptatum in, esse libero ducimus quam, a consectetur et suscipit voluptate architecto. Adipisci numquam, eius labore velit voluptatibus quod. Maxime, nulla autem?
+        Facere perferendis eos iusto consequuntur praesentium natus, esse tempora voluptatibus ex est nulla nesciunt rerum fugiat illum a velit sapiente minus illo quas repellat ipsum nisi ipsam neque quia. Sed?
+        Commodi similique tenetur a expedita magni odit neque, dicta vitae ipsa corporis libero sunt dolorum illo dolores placeat laudantium modi nulla molestias! Sit ipsa fugit doloribus sed blanditiis nobis dolore?
+        Iste debitis iusto maiores cumque sequi tempora optio mollitia asperiores harum enim! Et aliquam, quae at nam inventore vel repellendus ab quidem amet velit maiores asperiores ad! Reprehenderit, veniam eveniet?
+        Vero harum voluptatum deserunt molestiae nobis natus, omnis, asperiores dolore illum consectetur nisi praesentium quae tempore facilis odio placeat laborum doloremque. Vero veritatis iste tenetur nobis commodi? Eveniet, culpa quo.
+        Ullam facilis libero, recusandae explicabo aliquam sint velit dolores accusantium provident, doloremque, voluptas illo? Recusandae ea molestiae totam eius, ipsa rem ratione alias, laborum non dicta ad voluptates dolor? Maiores.
+        Velit nobis beatae atque magni explicabo repellendus eos non impedit officia! Quod praesentium corporis temporibus a cupiditate incidunt molestiae ipsum, ratione provident fugit. Explicabo nostrum ab reprehenderit rerum accusantium ex.
+        Repellendus iste expedita quas soluta, quasi natus. Inventore quasi, distinctio esse totam consequatur, debitis vel nihil mollitia odio, eveniet quidem ex et velit asperiores? Culpa placeat repellendus cupiditate eos rerum?
+        Dicta ab earum quisquam quos optio odio modi dignissimos exercitationem, qui omnis sed voluptatem dolorum asperiores impedit repellat distinctio quibusdam tenetur excepturi vero. Commodi quidem nulla, deleniti labore excepturi optio.
+        Ipsa dolor praesentium unde ratione eum distinctio ducimus, obcaecati commodi veniam. Laudantium ab eveniet provident quasi pariatur, consequatur possimus aspernatur, optio, sint architecto nesciunt! Debitis id quae eos earum error!
+        Veniam molestias dicta eaque voluptatem recusandae amet reprehenderit fuga saepe accusantium blanditiis nobis nulla magnam officiis, enim impedit expedita tenetur provident porro magni sint? Minus dicta sunt non quis officia?
+        Ad odio similique veritatis dolorum doloremque error dignissimos sequi obcaecati molestias est illo officia deserunt laboriosam optio consectetur sunt, mollitia suscipit minima? Totam, incidunt quidem sit porro exercitationem voluptatem repellat.
+        Neque, exercitationem ipsam error magnam ea quibusdam, itaque distinctio labore dicta hic possimus quidem numquam sunt eligendi velit animi. Beatae non iste fugit nihil, dicta nobis sequi natus id sapiente.
+        Repudiandae aperiam alias illum itaque, corporis tenetur qui optio ipsa repellat quaerat illo, iste deserunt ullam suscipit. Deleniti libero repellendus porro laborum, aliquid minima similique, veritatis, eaque id eum esse.
+        Eveniet repellendus ab veniam voluptas id fuga reprehenderit commodi quia quibusdam, fugit nihil aperiam, aut temporibus nostrum cum necessitatibus quis accusamus. Vero autem aperiam sapiente a esse quaerat, illo odit.
+        Sit molestiae, dolor culpa iure debitis libero, blanditiis at laudantium similique impedit et animi omnis ea nulla nesciunt pariatur. Id facere voluptate eligendi accusamus beatae inventore earum aut, sapiente architecto.
+        Possimus illum asperiores enim iure, architecto ab assumenda et accusamus. Ipsam error quia iste odio, modi earum sapiente consequatur, vel doloremque quaerat qui, eaque ducimus? Vitae praesentium eos minus amet!
+        Voluptates vel quod cum voluptatum consequatur veniam aut, eius eos odit voluptatibus voluptatem obcaecati maxime a ratione at natus fugiat? Deserunt perferendis id sequi nihil reprehenderit magnam quia ullam inventore.
+        Quos harum, sed fugit doloribus animi totam aspernatur commodi delectus explicabo exercitationem atque in rem necessitatibus dolor! Fugiat magnam optio pariatur, nobis recusandae laboriosam, sit placeat aspernatur debitis, cumque dicta.
+        Ea, est corrupti provident placeat aperiam nobis autem voluptate recusandae neque deserunt consequatur id consectetur a non aliquam? Eum dolorem voluptatum quasi repudiandae animi sapiente ad tenetur aliquid et voluptatibus?    
+        Est minus veniam adipisci! Incidunt debitis commodi itaque, cum impedit non ut iure at labore voluptate inventore sapiente tempora delectus voluptatum? Inventore expedita ab iste atque laborum possimus recusandae incidunt!</p>
+    </div>
+    <footer>
+        <p>PIE DE PÁGINA</p>
+    </footer>
+</body>
+</html>

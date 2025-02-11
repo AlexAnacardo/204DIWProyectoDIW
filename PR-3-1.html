@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imágenes con Diferentes Licencias</title>
+    <style>
+
+
+
+body {
+    font-family: sans-serif;    
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabecera */
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Cuerpo */
+.contenedorImagenes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    
+}
+
+.imagen {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+#imagen1{
+    width:250px;
+    height: 350px;
+
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+#imagen3{
+    width:250px;
+    height: 350px;
+
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.logoLicencia{
+    width: 7px;
+    height: 7px;
+}
+
+/* Información sobre la licencia */
+.info-licencia {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    display: none;
+    border-radius: 5px;
+}
+
+.imagen:hover .info-licencia {
+    display: block;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Imágenes con Diferentes Licencias</h1>
+    </header>
+
+
+    <div class="contenedorImagenes">
+        <div class="imagen" id="imagen1">
+            <img src="images/PR-3-1/imagenCopyleft.jpg">
+            <div class="info-licencia">
+                <img src="images/PR-3-1/copyleft.png" class="logoLicencia">
+                <p>Licencia: Copyleft</p>
+                <p>Foto de Mahdi Bafande en Unsplash</p>
+            </div>
+        </div>
+        <div class="imagen" id="imagen2">
+            <img src="ruta_a_tu_imagen2.jpg" alt="Imagen Copyright">
+            <div class="info-licencia">
+                <img src="ruta_a_licencia_copyright.png" alt="Licencia Copyright">
+                <p>Licencia: Copyright</p>
+            </div>
+        </div>
+        <div class="imagen" id="imagen3">
+            <img src="images/PR-3-1/imagenCC.jpg">
+            <div class="info-licencia">
+                <img src="images/PR-3-1/cc.png">
+                <p>Licencia: Creative Commons</p>
+                <p>Foto de EVG Kowalievska: https://www.pexels.com/es-es/foto/fotografia-de-enfoque-selectivo-de-gato-atigrado-naranja-1170986/</p>
+            </div>
+        </div>
+        <div class="imagen" id="imagen4">
+            <img src="ruta_a_tu_imagen4.jpg" alt="Imagen Coloriuris">
+            <div class="info-licencia">
+                <img src="ruta_a_licencia_coloriuris.png" alt="Licencia Coloriuris">
+                <p>Licencia: Coloriuris</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Imagenes con licencias Copyleft, Copyright y Coloriulis</p>
+    </footer>
+</body>
+</html>
