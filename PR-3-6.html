@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+* {
+box-sizing: border-box;
+font-family: sans-serif;
+font-size: 1.2rem;
+}
+body {
+margin: 2rem;
+}
+h2,h4{
+text-align: center;
+}
+.container {
+/* container: wrapper / inline-size; */
+container-name: wrapper;
+container-type: inline-size;
+resize: both;
+overflow: hidden;
+}
+.box {
+display: flex;
+justify-content: space-between;
+background: linear-gradient(to bottom, #284563, #3f5877);
+color: white;
+border-radius: 9px;
+}
+.box > div {
+padding: 1rem;
+display: flex;
+flex-flow: column;
+justify-content: center;
+align-items: center;
+}
+.box div p:first-child {
+font-weight: bold;
+}
+.box img {
+max-width: 100%;
+display: block;
+padding: 10px 0;
+margin: 0 auto;
+fill: white;
+border-radius: 1rem;
+}
+@container wrapper (max-width: 800px) {
+    .box {
+    flex-direction: column;
+    }
+    .box > div
+    {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    }
+    .box > div:not(:last-child) {
+    border-bottom: 1px solid white;
+    }
+} /* @container */
+.grid {
+margin-top: 2rem;
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 2rem;
+}
+</style>
+</head>
+<body>
+<h2>CSS Container Queries (caniuse.com) </h2>
+<h4>Size queries in Container Queries provide a way to query the size of a container,
+and conditionally apply CSS to the content of that container</h4>
+<div class="container">
+<article class="box">
+<div>
+<p>Titulo</p>
+<img src="http://picsum.photos/id/480/50/50" alt="">
+<span>año</span>
+</div>
+<div>
+<p>Titulo</p>
+<img src="http://picsum.photos/id/481/50/50" alt="">
+<span>año</span>
+</div>
+<div>
+<p>Titulo</p>
+<img src="http://picsum.photos/id/482/50/50" alt="">
+<span>año</span>
+</div>
+<div>
+<p>Titulo</p>
+<img src="http://picsum.photos/id/483/50/50" alt="">
+<span>año</span>
+</div>
+<div>
+<p>Titulo</p>
+<img src="http://picsum.photos/id/484/50/50" alt="">
+<span>año</span>
+</div>
+<div>
+<p>Titulo</p>
+<img src="http://picsum.photos/id/485/50/50" alt="">
+<span>año</span>
+</div>
+<div>
+<p>Titulo</p>
+<img src="http://picsum.photos/id/486/50/50" alt="">
+<span>año</span>
+</div>
+</article>
+</div>
+<div class="grid">
+<section>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, consectetur sunt? Minima
+maxime consequuntur hic voluptates? Minima tempora incidunt officiis molestiae quo animi eligendi,
+nesciunt modi commodi esse, dolores illo?</p>
+<p> Necessitatibus deleniti dolorum hic nisi, voluptatem laudantium consectetur eius. Omnis
+repudiandae suscipit nobis perferendis veniam accusantium tempore eveniet ducimus voluptas quasi, unde
+fugiat ab, sint rem adipisci eaque, consequuntur culpa!</p>
+<p> Excepturi eos, ut, distinctio recusandae officiis non debitis in suscipit, magni quas necessitatibus?
+Accusamus quo corrupti atque voluptas inventore! Natus aspernatur adipisci nobis error cum ipsam neque
+ipsa incidunt doloremque?</p>
+<p>Architecto eum ratione ipsam impedit debitis, veritatis minus autem necessitatibus quos nisi atque
+excepturi cumque corporis velit nihil sint corrupti distinctio dolores. Excepturi veritatis, molestiae adipisci
+consequuntur omnis quasi dignissimos?</p>
+</section>
+<aside>
+<div class="container">
+<article class="box">
+<div>
+<p>Titulo</p>
+<img src="http://picsum.photos/id/487/50/50" alt="">
+<span>año</span>
+</div>
+<div>
+<p>Titulo</p>
+<img src="http://picsum.photos/id/488/50/50" alt="">
+<span>año</span>
+</div>
+<div>
+<p>Titulo</p>
+<img src="http://picsum.photos/id/490/50/50" alt="">
+<span>año</span>
+</div>
+<div>
+<p>Titulo</p>
+<img src="http://picsum.photos/id/491/50/50" alt="">
+<span>año</span>
+</div>
+<div>
+<p>Titulo</p>
+<img src="http://picsum.photos/id/492/50/50" alt="">
+<span>año</span>
+</div>
+<div>
+<p>Titulo</p>
+<img src="http://picsum.photos/id/493/50/50" alt="">
+<span>año</span>
+</div>
+<div>
+<p>Titulo</p>
+<img src="http://picsum.photos/id/494/50/50" alt="">
+<span>año</span>
+</div>
+</article>
+</div>
+</aside>
+</div>
+</body>
+</html>

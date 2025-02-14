@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            height: 100vh;
+        }
+
+        #contenedorImagenes {
+            position: relative;
+            width: 700px;
+            height: 400px;
+        }
+
+        #fondo {
+            width: 100%;
+            height: 100%;
+            background-image: url('images/PR-3-4-1/Cielo.jpg');
+            background-size: cover; 
+            position: relative; 
+        }
+
+        #mascara {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, red, blue);
+            mask-image: url('images/PR-3-4-1/edificiosNegros.png');
+            -webkit-mask-image: url('images/PR-3-4-1/edificiosNegros.png'); 
+            mask-size: cover;
+            -webkit-mask-size: cover;
+            mask-repeat: no-repeat;
+            -webkit-mask-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <div id="contenedorImagenes">
+        <div id="fondo"></div>
+        <div id="mascara"></div>
+    </div>
+</body>
+</html>

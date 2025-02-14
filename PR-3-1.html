@@ -5,9 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imágenes con Diferentes Licencias</title>
     <style>
-
-
-
 body {
     font-family: sans-serif;    
     margin: 0;
@@ -16,7 +13,7 @@ body {
 
 /* Cabecera */
 header {
-    background-color: #4CAF50;
+    background-color: yellowgreen;
     color: white;
     text-align: center;
     padding: 20px;
@@ -28,63 +25,62 @@ h1 {
 
 /* Cuerpo */
 .contenedorImagenes {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    display: flex;
+    justify-content: space-around;
     padding: 20px;
-    
 }
 
 .imagen {
     position: relative;
     overflow: hidden;
-    border-radius: 8px;
+    border-radius: 8px;  
+    width: 250px;
+    height: 350px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#imagen1{
-    width:250px;
+#imagen1, #imagen2, #imagen3, #imagen4 {
+    width: 250px;
     height: 350px;
-
-    img{
-        width: 100%;
-        height: 100%;
-    }
 }
 
-#imagen3{
-    width:250px;
-    height: 350px;
-
-    img{
-        width: 100%;
-        height: 100%;
-    }
-}
-
-.logoLicencia{
-    width: 7px;
-    height: 7px;
+#imagen1 img, #imagen2 img,  #imagen3 img {
+    width: 100%;
+    height: 100%;
 }
 
 /* Información sobre la licencia */
 .info-licencia {
     position: absolute;
-    bottom: 10px;
-    left: 10px;
-    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo gris oscuro semi-transparente */
     color: white;
+    border-radius: 8px;
+    
+    display: none; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
     padding: 10px;
-    display: none;
-    border-radius: 5px;
 }
 
-.imagen:hover .info-licencia {
-    display: block;
+
+.info-licencia img {    
+    margin-bottom: 10px;
 }
+
+/* Asegura que se muestre al hacer hover */
+.imagen:hover .info-licencia {
+    display: flex;
+}
+
 
 /* Pie de página */
 footer {
-    background-color: #333;
+    background-color: gray;
     color: white;
     text-align: center;
     position: fixed;
@@ -105,16 +101,17 @@ footer {
         <div class="imagen" id="imagen1">
             <img src="images/PR-3-1/imagenCopyleft.jpg">
             <div class="info-licencia">
-                <img src="images/PR-3-1/copyleft.png" class="logoLicencia">
+                <img src="images/PR-3-1/copyleft.png">
                 <p>Licencia: Copyleft</p>
                 <p>Foto de Mahdi Bafande en Unsplash</p>
             </div>
         </div>
         <div class="imagen" id="imagen2">
-            <img src="ruta_a_tu_imagen2.jpg" alt="Imagen Copyright">
+            <img src="images/PR-3-1/imagenCopyright.jpg" alt="Imagen Copyright">
             <div class="info-licencia">
-                <img src="ruta_a_licencia_copyright.png" alt="Licencia Copyright">
+                <img src="images/PR-3-1/Copyright.png">
                 <p>Licencia: Copyright</p>
+                <p>Imagen de Jackie Matthews en Pixabay</p>
             </div>
         </div>
         <div class="imagen" id="imagen3">
@@ -126,10 +123,11 @@ footer {
             </div>
         </div>
         <div class="imagen" id="imagen4">
-            <img src="ruta_a_tu_imagen4.jpg" alt="Imagen Coloriuris">
+            <img src="images/PR-3-1/imagenColoriuris.JPG" alt="Imagen Coloriuris">
             <div class="info-licencia">
-                <img src="ruta_a_licencia_coloriuris.png" alt="Licencia Coloriuris">
+                <img src="images/PR-3-1/coloriuris.png" alt="Licencia Coloriuris">
                 <p>Licencia: Coloriuris</p>
+                <p>Imagen con licencia coloriuris</p>
             </div>
         </div>
     </div>
