@@ -3,27 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <title>Bootstrap Layout</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>    
 </head>
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-12 bg-primary">
-                HEADER
+            <div class="col-12 bg-warning p-4">
+                <strong>Header</strong><br>
+                que poco alto Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam rem voluptas evneiet...
             </div>
-            <div class=" col-12 col-lg-2 bg-secondary">
-                Nav
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-3 col-lg-2 bg-info p-3 d-flex flex-column">
+                <div>
+                    <strong>Nav</strong><br>
+                    Lorem ipsum dolor sit amet...
+                </div>
             </div>
-            <div class="col-12 col-sm-9 col-lg-7 bg-success">
-                MAIN Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ut, vel quod nisi quo repudiandae quam quasi, cupiditate quas suscipit similique quidem quisquam odit consectetur fugit iusto error, vitae illo.
+            <div class="col-12 col-md-6 col-lg-7 bg-danger p-6">
+                <strong>Main</strong><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </div>
-            <div class="col-12 col-sm-3 col-lg-3 bg-danger">
-                ASIDE Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi vero architecto voluptatum quisquam quis iste, ratione dolorem consequatur veritatis sed vitae
+            <div class="col-12 col-md-3 col-lg-3 bg-success p-5">
+                <strong>aside</strong><br>
+                Lorem ipsum
             </div>
-            <div class="col-12 bg-info">
-                footer
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-3 col-lg-2 bg-info p-3">
+                &nbsp; <!--No encontre otra forma aparte de esta para hacer que el nav pasase abajo, no se si estara bien hecho-->
+            </div>
+            <div class="col-12 col-md-9 col-lg-10 bg-secondary p-3 text-white">
+                <strong>footer</strong><br>
+                Este es el pie de página
             </div>
         </div>
     </div>

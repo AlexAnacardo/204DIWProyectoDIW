@@ -1,0 +1,88 @@
+<!--CAMBIOS REALIZADOS:    
+    HTML: Añadidos h4 y h6 en section y article
+    CSS: Individualizado cada elemento css
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PR-2-10-1-a</title>
+    <style>   
+        *{
+            box-sizing: border-box;
+            font-family: sans-serif;
+            font-size: 1.2rem;
+        }     
+        body{
+            background: #e5e5e5;
+        }
+
+        section h4, article h4{
+            display: none;
+        }
+        .container{
+            position: relative;         
+            width: 700px;height: 700px;    
+            display: flex;
+            flex-flow: column wrap;       
+            border: 4px solid black;
+        }
+
+            .container main{
+                background: #cdce95; 
+                width: 40%; flex: 100%               
+            }
+            .container .art1{
+                background: #230909;
+                color: white;
+            }
+            .container .art2{
+                background: #6b4b4b;
+            }
+            .container footer{
+                background: #c4c4c4;
+                width: 30%; flex: 30%;
+            }
+            .container nav{
+                background: #e46363;
+                width: 30%; flex: 20%;
+            }
+            .container aside{
+                background: #8d3ccd;
+                width: 30%; flex: 80%;
+            }
+
+            
+            .container section{
+                display: flex;
+                width: 30%; flex: 70%;
+                
+            }
+            .container section article{flex:1}        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <main>Main</main>
+        <section>
+            <h4>A</h4>
+            <article class="art1">
+                <h4>A</h4>
+                article 1
+            </article>
+            <article class="art2">
+                <h4>A</h4>
+                article 2
+            </article>
+        </section>
+        <footer>footer</footer>
+        <nav>nav</nav>
+        <aside>aside</aside>
+    </div>
+    <footer>
+        <a href="https://validator.w3.org/"><p>Validador HTML</p></a>
+        <a href="https://jigsaw.w3.org/css-validator/"><p>Validador CSS</p></a>
+    </footer>
+</body>
+</html>
